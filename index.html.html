@@ -3,209 +3,37 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Архив личных дел — Пик Надежды</title>
+<meta name="description" content="Информационный сайт о вреде пластикового загрязнения для природы и о том, как каждый может помочь.">
+<title>Планета без пластика — береги природу</title>
 <style>
-  :root {
-    --bg: #0d0f12;
-    --panel: #14171c;
-    --border: #2a2f38;
-    --text: #c9d1d9;
-    --dim: #7d8590;
-    --accent: #b33a3a;
-    --secret: #d4a017;
-  }
-  * { box-sizing: border-box; }
-  body {
-    margin: 0;
-    background: var(--bg);
-    color: var(--text);
-    font-family: "Courier New", Consolas, monospace;
-    line-height: 1.55;
-  }
-  header {
-    padding: 28px 20px 18px;
-    border-bottom: 1px solid var(--border);
-    background: var(--panel);
-    text-align: center;
-  }
-  header h1 {
-    margin: 0 0 6px;
-    font-size: 1.35rem;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    color: #e6edf3;
-  }
-  header p {
-    margin: 0;
-    color: var(--dim);
-    font-size: 0.8rem;
-    letter-spacing: 1px;
-  }
-  nav {
-    max-width: 900px;
-    margin: 22px auto 0;
-    padding: 0 20px;
-  }
-  nav h2 {
-    font-size: 0.75rem;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    color: var(--dim);
-    margin: 0 0 10px;
-  }
-  nav ul { list-style: none; padding: 0; margin: 0; }
-  nav li { margin-bottom: 6px; }
-  nav a {
-    color: var(--text);
-    text-decoration: none;
-    border-left: 3px solid var(--accent);
-    padding: 6px 12px;
-    display: block;
-    background: var(--panel);
-    font-size: 0.9rem;
-    transition: background .15s, border-color .15s;
-  }
-  nav a:hover { background: #1b2027; border-color: var(--secret); }
-  nav a .num { color: var(--dim); margin-right: 8px; }
-  main {
-    max-width: 900px;
-    margin: 0 auto;
-    padding: 26px 20px 60px;
-  }
-  article.dossier {
-    background: var(--panel);
-    border: 1px solid var(--border);
-    padding: 22px 24px;
-    margin-bottom: 30px;
-    scroll-margin-top: 20px;
-  }
-  .dossier-title {
-    text-align: center;
-    font-size: 1.05rem;
-    letter-spacing: 1.5px;
-    color: #e6edf3;
-    margin: 0 0 4px;
-  }
-  .dossier-meta {
-    text-align: center;
-    font-size: 0.9rem;
-    margin-bottom: 14px;
-  }
-  .dossier-meta div { margin: 2px 0; }
-  .dossier-meta .label { color: var(--dim); }
-  hr.sep {
-    border: none;
-    border-top: 1px dashed var(--border);
-    margin: 14px 0;
-  }
-  .block-title {
-    font-size: 0.78rem;
-    letter-spacing: 1.5px;
-    text-transform: uppercase;
-    color: var(--accent);
-    margin: 14px 0 6px;
-  }
-  .block-text { margin: 0; text-align: justify; }
-  .secret {
-    color: var(--secret);
-    border-bottom: 1px dotted var(--secret);
-    cursor: help;
-  }
-  footer {
-    text-align: center;
-    color: var(--dim);
-    font-size: 0.72rem;
-    letter-spacing: 1px;
-    padding: 20px;
-    border-top: 1px solid var(--border);
-  }
-  a.back {
-    display: inline-block;
-    margin-top: 18px;
-    color: var(--dim);
-    text-decoration: none;
-    font-size: 0.78rem;
-    letter-spacing: 1px;
-  }
-  a.back:hover { color: var(--text); }
+:root{--green:#176b4a;--mint:#dff3e8;--ink:#18352b;--cream:#fbfaf4;--orange:#f4a261}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Arial,Helvetica,sans-serif;color:var(--ink);background:var(--cream);line-height:1.6}
+header{position:sticky;top:0;z-index:5;background:#fbfaf4ee;backdrop-filter:blur(10px);border-bottom:1px solid #dce8df}
+nav{max-width:1120px;margin:auto;padding:14px 22px;display:flex;align-items:center;justify-content:space-between;gap:20px}.brand{font-weight:800;color:var(--green);font-size:1.2rem;text-decoration:none}.navlinks{display:flex;gap:20px;flex-wrap:wrap}.navlinks a{color:var(--ink);text-decoration:none;font-size:.95rem}.navlinks a:hover{color:var(--green)}
+.hero{background:linear-gradient(115deg,#103f31dd,#176b4acc),url('https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?auto=format&fit=crop&w=1800&q=85') center/cover;color:white;padding:105px 22px 115px}.hero-inner{max-width:1120px;margin:auto}.eyebrow{text-transform:uppercase;letter-spacing:.16em;font-size:.78rem;font-weight:bold;color:#c5f0d7}.hero h1{font-size:clamp(2.5rem,6vw,5.3rem);line-height:1.02;max-width:780px;margin:18px 0}.hero p{font-size:1.2rem;max-width:620px;color:#e5f4eb}.button{display:inline-block;background:var(--orange);color:#24372e;text-decoration:none;padding:13px 22px;border-radius:30px;font-weight:bold;margin-top:18px}.button:hover{transform:translateY(-2px)}
+section{padding:76px 22px}.wrap{max-width:1120px;margin:auto}.section-tag{color:var(--green);font-weight:bold;text-transform:uppercase;letter-spacing:.12em;font-size:.78rem}h2{font-size:clamp(2rem,4vw,3.2rem);line-height:1.1;margin:10px 0 18px}.intro{max-width:720px;color:#53675d;font-size:1.08rem}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:35px}.stat{background:white;border:1px solid #e3ebe4;border-radius:18px;padding:24px}.stat strong{display:block;color:var(--green);font-size:2rem}.stat span{color:#607269;font-size:.95rem}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:34px}.card{background:white;border-radius:20px;overflow:hidden;border:1px solid #e5ece6;box-shadow:0 8px 24px #163c2810}.card img{width:100%;height:205px;object-fit:cover;display:block}.card-content{padding:22px}.card h3{margin:0 0 8px;font-size:1.25rem}.card p{margin:0;color:#5a6b62}
+.tint{background:var(--mint)}.split{display:grid;grid-template-columns:1fr 1fr;gap:44px;align-items:center}.split img{width:100%;border-radius:24px;max-height:430px;object-fit:cover}.checklist{padding:0;list-style:none}.checklist li{padding:12px 0 12px 34px;position:relative;border-bottom:1px solid #c8dfd1}.checklist li:before{content:"✓";position:absolute;left:2px;color:var(--green);font-weight:bold;font-size:1.2rem}
+.action-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin-top:30px}.action{background:white;padding:20px;border-radius:16px;border:1px solid #e0eae2}.action b{display:block;margin-bottom:5px;color:var(--green)}
+.callout{background:#173f32;color:white;border-radius:26px;padding:42px;margin-top:30px}.callout h2{max-width:650px}.callout p{max-width:700px;color:#d9ebe1}
+footer{background:#102e25;color:#d8e8df;padding:34px 22px}.footer-inner{max-width:1120px;margin:auto;display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}footer a{color:#d8e8df}
+@media(max-width:760px){.navlinks{display:none}.hero{padding:78px 22px}.stats,.cards,.split,.action-grid{grid-template-columns:1fr}.split{gap:24px}section{padding:58px 20px}.callout{padding:28px}}
 </style>
 </head>
 <body>
-
-<header>
-  <h1>Архив личных дел</h1>
-  <p>АКАДЕМИЯ «ПИК НАДЕЖДЫ» · СЛУЖБА БЕЗОПАСНОСТИ · КОНФИДЕНЦИАЛЬНО</p>
-</header>
-
-<nav>
-  <h2>Оглавление</h2>
-  <ul>
-    <li><a href="#d03"><span class="num">№03-К</span>Кокичи Ома — Абсолютный Шут Хаоса</a></li>
-    <li><a href="#d07"><span class="num">№07-А</span>Рантаро Амами — Абсолютный Авантюрист</a></li>
-  </ul>
-</nav>
-
+<header><nav><a class="brand" href="#">🌿 Планета без пластика</a><div class="navlinks"><a href="#problem">Проблема</a><a href="#impact">Последствия</a><a href="#solutions">Что делать</a><a href="#pledge">Мой вклад</a></div></nav></header>
 <main>
-
-  <!-- ДЕЛО №03-К -->
-  <article class="dossier" id="d03">
-    <div class="dossier-title">ЛИЧНОЕ ДЕЛО №03-К</div>
-    <div class="dossier-meta">
-      <div><span class="label">Имя:</span> Кокичи Ома</div>
-      <div><span class="label">Возраст:</span> 20 лет</div>
-      <div><span class="label">Статус:</span> Жив</div>
-      <div><span class="label">Талант:</span> Абсолютный Шут Хаоса</div>
-    </div>
-    <hr class="sep">
-
-    <div class="block-title">Особые приметы</div>
-    <p class="block-text">Костюм Шута, скрывающий истинное лицо субъекта; вне выступлений Ома держится подчёркнуто открыто, но о своей внешности говорит уклончиво, и причины этого <span class="secret">[ДАННЫЕ ОТ СЛУЖБЫ БЕЗОПАСНОСТИ ЗАСЕКРЕЧЕНЫ]</span>. На поясе — старинный карманный компас на тяжёлой цепочке. Манеры игривые, речь театральная, с внезапными переходами от детской непосредственности к холодному расчёту. При общении с незнакомыми людьми постоянно «прощупывает» их реакциями — проверяет на страх, жадность, тщеславие.</p>
-    <hr class="sep">
-
-    <div class="block-title">Краткая сводка</div>
-    <p class="block-text">Вырос в трущобах, с ранних лет выживал на улице вместе с Рантаро Амами (см. дело №07-А), который стал его ближайшим другом и тылом. Из уличной банды создал международную бродячую труппу «D.I.C.E.», чьи перформансы прогремели от криминального клана Кузурю до совета директоров Towa Group и королевского двора Новоселик. Костюм Шута Хаоса создан Цумуги Широганэ по референсам, собранным Амами в Италии и Франции. За кулисами представлений труппа добывает компромат на влиятельных лиц; часть добытых данных передаётся Амами для экспедиций, взамен D.I.C.E. обеспечивает безопасность его сестёр, чьи имена и местонахождение <span class="secret">[ИНФОРМАЦИЯ ЗАСЕКРЕЧЕНА]</span> и изъяты из общего доступа в целях безопасности субъекта.</p>
-    <hr class="sep">
-
-    <div class="block-title">Причина присвоения таланта</div>
-    <p class="block-text">Способен превратить любое событие в управляемый спектакль и удерживать внимание аудитории любой статусной принадлежности. Демонстрирует незаурядное мастерство манипуляции: под прикрытием представлений проворачивает кражи, подмены документов и взломы, оставаясь неуличённым. Умеет читать толпу и отдельного человека, подстраивая сценарий под реакции. Отдельно отмечается парадоксальная черта: субъект лжёт почти постоянно, однако в критических ситуациях, связанных с Амами, действует безошибочно и без обмана — комиссия фиксирует это как аномалию.</p>
-    <hr class="sep">
-
-    <div class="block-title">Цель прибытия</div>
-    <p class="block-text">Официально зачислен в Академию «Пик Надежды» для освоения программы по профилю таланта и расширения репертуара труппы. Академия и прежде пользовалась известностью в округах, однако именно поступление Омы привлекло к ней дополнительное внимание: число желающих поступить и посетить учреждение заметно выросло, а администрация не скрывает, что намерена использовать имя субъекта в своих интересах. Фактически, по данным скрытого наблюдения, Ома относится к обучению как к очередной сцене и посещает лишь те занятия, где может получить доступ к <span class="secret">[ИНФОРМАЦИЯ ЗАСЕКРЕЧЕНА]</span>. Администрация предупреждает: субъект не боится разоблачения, не реагирует на стандартные угрозы и способен склонить окружающих к нужному ему решению, оставаясь при этом обаятельным. При проведении допросов рекомендуется присутствие второго наблюдателя.</p>
-    <a class="back" href="#">↑ К оглавлению</a>
-  </article>
-
-  <!-- ДЕЛО №07-А -->
-  <article class="dossier" id="d07">
-    <div class="dossier-title">ЛИЧНОЕ ДЕЛО №07-А</div>
-    <div class="dossier-meta">
-      <div><span class="label">Имя:</span> Рантаро Амами</div>
-      <div><span class="label">Возраст:</span> 20 лет</div>
-      <div><span class="label">Статус:</span> Жив</div>
-      <div><span class="label">Талант:</span> Абсолютный Авантюрист</div>
-    </div>
-    <hr class="sep">
-
-    <div class="block-title">Особые приметы</div>
-    <p class="block-text">Светло-зелёные волосы с выбритыми висками, пирсинг, серебряные кольца. На теле множество шрамов от старых экспедиций, происхождение которых <span class="secret">[ДАННЫЕ ОТ СЛУЖБЫ БЕЗОПАСНОСТИ ЗАСЕКРЕЧЕНЫ]</span> — при упоминании о них субъект заметно меняет тему. Держится расслабленно и дружелюбно, однако взгляд постоянно сканирует окружение, а спит крайне чутко. О прошлом говорит уклончиво, легко переводит разговор.</p>
-    <hr class="sep">
-
-    <div class="block-title">Краткая сводка</div>
-    <p class="block-text">Вырос в трущобах старшим сыном в семье с двенадцатью младшими сёстрами, с ранних лет брался за любую опасную работу ради их пропитания. На одной из подработок познакомился с Кокичи Омой (см. дело №03-К) и стал для него надёжным тылом; в ответ труппа «D.I.C.E.» тайно обеспечивает безопасность его сестёр. Совместно с Цумуги Широганэ участвовал в создании образа «Шута Хаоса» — собирал визуальные референсы в карнавальных городах Италии и уличных театрах Франции. В ходе одной из экспедиций субъект провёл <span class="secret">[ИНФОРМАЦИЯ ЗАСЕКРЕЧЕНА]</span> дней в одиночестве без связи и припасов, после чего был найден живым, но с провалом в памяти о произошедшем; детали инцидента не восстановлены до сих пор.</p>
-    <hr class="sep">
-
-    <div class="block-title">Причина присвоения таланта</div>
-    <p class="block-text">Совершил множество экспедиций в зоны повышенной опасности — гробницы Египта, храмы инков в джунглях Южной Америки, криминальные кварталы азиатских мегаполисов. Выживал там, где гибли подготовленные группы, сохраняя хладнокровие и трезвый расчёт в ситуациях, провоцирующих панику. Обладает редкой способностью выстраивать доверие с маргинальными элементами, не теряя контроля над ситуацией. Отдельно отмечается, что субъект поддерживает тесную связь с Кокичи Омой и по его просьбе неоднократно выступал посредником и помощником в делах труппы «D.I.C.E.», оставаясь при этом в тени.</p>
-    <hr class="sep">
-
-    <div class="block-title">Цель прибытия</div>
-    <p class="block-text">Официально зачислен в Академию «Пик Надежды» для систематизации полевых знаний и освоения передовых методов исследований. Фактически, по данным скрытого наблюдения, субъект воспринимает обучение как удобное прикрытие: занятия посещает выборочно, а основное время уделяет <span class="secret">[ИНФОРМАЦИЯ ЗАСЕКРЕЧЕНА]</span>, что и стало условием его согласия на прибытие. Администрация предупреждает: субъект не склонен к панике, не поддаётся стандартному давлению и обладает связями за пределами Академии. При угрозе другим ученикам ожидается активное вмешательство с непредсказуемыми последствиями.</p>
-    <a class="back" href="#">↑ К оглавлению</a>
-  </article>
-
+<section class="hero"><div class="hero-inner"><div class="eyebrow">Маленькие привычки меняют большое</div><h1>Природа не должна расплачиваться за пластик</h1><p>Пластик окружает нас каждый день. Но то, что удобно на несколько минут, может оставаться в окружающей среде десятилетиями и даже дольше.</p><a class="button" href="#solutions">Узнать, как помочь</a></div></section>
+<section id="problem"><div class="wrap"><div class="section-tag">01 — проблема</div><h2>Пластик повсюду. Даже там, где мы его не видим.</h2><p class="intro">Одноразовые пакеты, бутылки, упаковка и рыболовные сети часто становятся мусором. Ветер и реки переносят отходы на большие расстояния — к лесам, берегам и в океан.</p><div class="stats"><div class="stat"><strong>Миллионы тонн</strong><span>пластиковых отходов ежегодно попадают в водные экосистемы.</span></div><div class="stat"><strong>Очень долго</strong><span>многие пластиковые изделия разрушаются крайне медленно.</span></div><div class="stat"><strong>Микропластик</strong><span>крошечные частицы обнаруживают в воде, почве и живых организмах.</span></div></div></div></section>
+<section id="impact" class="tint"><div class="wrap"><div class="section-tag">02 — последствия</div><h2>Как пластик вредит живой природе</h2><p class="intro">Загрязнение пластиком — это не просто некрасивые берега. Оно влияет на животных, растения и целые экосистемы.</p><div class="cards">
+<article class="card"><img src="https://images.unsplash.com/photo-1518467166778-b88f373ffec7?auto=format&fit=crop&w=900&q=80" alt="Морская черепаха в воде"><div class="card-content"><h3>Опасность для животных</h3><p>Птицы, черепахи, рыбы и морские млекопитающие могут запутаться в пластике или принять его за пищу.</p></div></article>
+<article class="card"><img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=900&q=80" alt="Зелёный лес и природа"><div class="card-content"><h3>Загрязнение почвы и воды</h3><p>Пластиковый мусор портит природные места, а мелкие частицы могут распространяться по воде и почве.</p></div></article>
+<article class="card"><img src="https://images.unsplash.com/photo-1498623116890-37e912163d5d?auto=format&fit=crop&w=900&q=80" alt="Побережье и океан"><div class="card-content"><h3>Угроза экосистемам</h3><p>Мусор может повреждать места обитания и нарушать природные процессы в реках, морях и на суше.</p></div></article>
+</div></div></section>
+<section><div class="wrap split"><div><div class="section-tag">03 — почему это важно</div><h2>Пластик не исчезает бесследно</h2><p class="intro">Под действием солнца, волн и времени крупные предметы могут распадаться на всё более мелкие частицы. Это не означает, что пластик полностью исчезает: микропластик продолжает загрязнять окружающую среду.</p><p>Поэтому важно не только убирать мусор, но и сокращать его появление.</p></div><img src="https://images.unsplash.com/photo-1618477461853-cf6ed80fаба?auto=format&fit=crop&w=1000&q=80" alt="Чистая вода и природный ландшафт"></div></section>
+<section id="solutions" class="tint"><div class="wrap"><div class="section-tag">04 — решения</div><h2>Что может сделать каждый из нас</h2><p class="intro">Не обязательно менять всё сразу. Начни с одного простого шага и постепенно добавляй новые привычки.</p><div class="action-grid"><div class="action"><b>01. Носи многоразовую сумку</b>Откажись от одноразового пакета, когда это возможно.</div><div class="action"><b>02. Используй свою бутылку</b>Многоразовая бутылка помогает сократить количество одноразовой тары.</div><div class="action"><b>03. Выбирай меньше упаковки</b>Покупай товары без лишней упаковки, если есть такая возможность.</div><div class="action"><b>04. Сортируй отходы</b>Проверяй местные правила сортировки: они различаются в разных городах.</div><div class="action"><b>05. Не оставляй мусор на природе</b>Забирай отходы с собой после прогулки или пикника.</div><div class="action"><b>06. Рассказывай другим</b>Делись проверенной информацией и поддерживай экологичные инициативы.</div></div></div></section>
+<section id="pledge"><div class="wrap"><div class="callout"><div class="section-tag" style="color:#a9e3c2">Твой следующий шаг</div><h2>Буду частью решения, а не проблемы.</h2><p>Выбери одну привычку, которую начнёшь применять уже сегодня. Даже небольшие действия, повторяемые многими людьми, помогают сократить количество пластикового мусора.</p><a class="button" href="#problem">Начать с понимания проблемы</a></div></div></section>
 </main>
-
-<footer>АРХИВ СЛУЖБЫ БЕЗОПАСНОСТИ · ДОСТУП ОГРАНИЧЕН · SHINRI TRIAL</footer>
-
-</body>
-</html>
+<footer><div class="footer-inner"><span>🌱 Планета без пластика</span><span>Береги природу — выбирай осознанно.</span><span>Информационный проект об экологической ответственности</span></div></footer>
+</body></html>
